@@ -8,7 +8,7 @@ interface Props {
   data: IProduct[] | undefined;
 }
 
-const ProductView: FC<Props> = ({ title, gridCol = "5", data }) => {
+const ProductView: FC<Props> = ({ title, data }) => {
   const wrapperClass = `grid grid-cols-5 gap-3 `;
   const navigate = useNavigate()
   return (
